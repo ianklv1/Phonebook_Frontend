@@ -37,7 +37,7 @@ const SignUpModal = ({
             </Box>
           </DialogContent>
           <DialogActions>
-            <Button color='secondary' onClick={handleClose}>
+            <Button color='error' onClick={handleClose}>
               {viewOnly ? 'Close' : 'Cancel'}
             </Button>
             {!viewOnly && (

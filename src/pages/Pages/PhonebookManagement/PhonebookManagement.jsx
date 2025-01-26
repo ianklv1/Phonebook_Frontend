@@ -104,7 +104,7 @@ const PhonebookManagement = () => {
           </Tooltip>,
           <Tooltip key={'actionsShareContact'} title={row.isShared ? 'Shared' : 'Not Shared'} arrow>
             <GridActionsCellItem
-              icon={<Share color={row.isShared ? 'primary' : 'secondary'} />}
+              icon={<Share color={row.isShared ? 'primary' : 'primary.text'} />}
               label='Share'
               onClick={() => handleUpdateShareStatus(id, row.isShared)}
               color='inherit'

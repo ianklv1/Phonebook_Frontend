@@ -93,7 +93,11 @@ const Navigation = props => {
       <Divider />
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 3, my: 3, ml: 5 }}>
         <ImageBadge imageUrl={profileImage && URL.createObjectURL(profileImage)} />
-        <Typography variant='caption' fontWeight={'bold'}>{`Welcome, ${UserData.firstName ?? 'User'}!`}</Typography>
+        <Typography
+          variant='caption'
+          fontWeight={'bold'}
+          color='primary'
+        >{`Welcome, ${UserData.firstName ?? 'User'}!`}</Typography>
       </Box>
       <Divider />
       <List>
@@ -113,8 +117,9 @@ const Navigation = props => {
                     sx={{
                       width: '100%', // Full width for the button
                       backgroundColor: isActive ? 'primary.main' : 'transparent',
-                      color: isActive ? 'white' : 'black',
+                      color: isActive ? 'white' : 'rgb(140, 86, 167)',
                       '&:hover': {
+                        color: 'white',
                         backgroundColor: isActive ? 'primary.main' : 'primary.light' // Active stays the same
                       },
                       paddingLeft: 2, // Adjust padding for consistency

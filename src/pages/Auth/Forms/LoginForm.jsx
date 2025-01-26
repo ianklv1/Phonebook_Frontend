@@ -84,6 +84,7 @@ export const LoginDetails = ({ control, errors = null }) => {
 }
 
 const LoginForm = () => {
+  const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
   const [errorMessage, setErrorMessage] = useState('')
   const dispatch = useDispatch()
@@ -94,13 +95,16 @@ const LoginForm = () => {
   }
 
   const onSubmit = async data => {
+    setLoading(true)
     const res = await dispatch(loginUser(data))
 
     const token = res?.payload?.token
     if (token) {
       localStorage.setItem('userToken', token)
+      setLoading(false)
       navigate('/profile')
     } else {
+      setLoading(false)
       setErrorMessage(res?.payload?.error)
     }
   }
@@ -114,7 +118,7 @@ const LoginForm = () => {
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
         <LoginDetails control={control} />
-        <AuthLinkAndButton state={'login'} />
+        <AuthLinkAndButton state={'login'} disabled={loading} />
         {errorMessage !== '' && errorMessage !== null && errorMessage !== undefined && (
           <Note message={errorMessage} type='error' />
         )}
