@@ -3,10 +3,10 @@ import { Typography } from '@mui/material'
 const AppDetail = ({ size = null }) => {
   return (
     <>
-      <Typography variant={size ?? 'h5'} fontWeight='bold' color='primary'>
-        Phone Book System
+      <Typography variant={size ?? 'h4'} fontWeight='bold' color='primary'>
+        MedImpact
       </Typography>
-      <Typography variant='caption'>Powered by MedImpact</Typography>
+      <Typography variant='caption'>Phonebook System</Typography>
     </>
   )
 }
