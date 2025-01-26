@@ -21,3 +21,8 @@ Key notes on testing:
 - If signup is successful use superadmin account to approve your sign up so you can access the application
 - for forgot password functionality, when email is sent, please check your spam and inbox if email is received 
 
+Additional notes:
+
+- They are already decent data for testing reference hope it doesn't bother :)
+
+Thank you.
