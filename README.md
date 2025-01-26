@@ -1,8 +1,23 @@
-# React + Vite
+MedImpact Phonebook Frontend Repository
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Production URL: https://mpact-phonebook-frontend.onrender.com/
 
-Currently, two official plugins are available:
+Specifications
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Create React App using Vite.js
+- Redux Toolkit for session/store management
+- Redux Persist for persistence
+- React Router
+- Javascript 
+
+Credentials for Superadmin
+
+username: superadmin
+password: admin123
+
+Key notes on testing:
+
+- Please sign up first for your user account 
+- If signup is successful use superadmin account to approve your sign up so you can access the application
+- for forgot password functionality, when email is sent, please check your spam and inbox if email is received 
+
