@@ -117,7 +117,7 @@ const Navigation = props => {
                     sx={{
                       width: '100%', // Full width for the button
                       backgroundColor: isActive ? 'primary.main' : 'transparent',
-                      color: isActive ? 'white' : 'rgb(140, 86, 167)',
+                      color: isActive ? 'white' : 'rgb(59, 170, 132)',
                       '&:hover': {
                         color: 'white',
                         backgroundColor: isActive ? 'primary.main' : 'primary.light' // Active stays the same

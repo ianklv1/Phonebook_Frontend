@@ -4,7 +4,7 @@ const AppDetail = ({ size = null }) => {
   return (
     <>
       <Typography variant={size ?? 'h4'} fontWeight='bold' color='primary'>
-        MedImpact
+        Booky
       </Typography>
       <Typography variant='caption'>Phonebook System</Typography>
     </>
