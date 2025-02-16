@@ -1,4 +1,4 @@
-MedImpact Phonebook Frontend Repository
+Phonebook Frontend Repository
 
 Specifications
 
